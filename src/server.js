@@ -15,4 +15,4 @@ router.get("/", function (req, res) {
 
 app.use("/", router);
 app.use(express.static(path.resolve(__dirname, "public")));
-app.listen(process.env.port || 3000);
+app.listen(process.env.PORT || 3000);
