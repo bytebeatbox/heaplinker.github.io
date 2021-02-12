@@ -2,9 +2,15 @@
   "name": "heaplinker.github.io",
   "version": "1.0.0",
   "description": "Heaplinker is a platform that spreads multilingual digital writings with the motto of \"think and make\". It has been made in a very similar way to Medium. Just as Medium is an open platform of writings on many subjects, here Heaplinker is also a platform where contains a variety of topics, especially technical ones for digital publishing. Special emphasis will be given on technical issues here. Its main purpose is to spread ideas, information, and deepen understanding of technical knowledge, and to publish posts in both English and Bengali language. For now, all posts here are in English. Currently, only the owner of the site, i.e. the admin, has the access to the dashboard page where the admin can add posts. The post is given through the dashboard, it's called \"content management system\" or CMS. Other users are not allowed to access this page, they can only access the blog posts. Since the CMS is a huge development issue, so only the admin can add posts for now. But later other users will also be able to add posts in both English and Bengali language when the CMS will be more developed. The dashboard page is designed in such a way that the admin can add a post without any programming knowledge. There is a template on the dashboard page, if one wants to add a new post, he will just have to fill it with texts and images in that template. According to the default design of the site, the post will automatically be added perfectly. It has been created this way for the time being as the CMS is not advanced yet. If one enters the dashboard for the first time without logging in, it will show the default view of Heaplinker. Once the user has logged in, it will show the user's picture and details. The next time someone login, he will have to enter the email and password, then another page will be shown where the user can add a post. The dashboard page is not responsive yet, but the index page and post pages are entirely made responsive. There are both desktop view and mobile view for the index and post pages. On the mobile view, there is an option \"menu\" where different pages and language option buttons can be selected. On the other hand, on the desktop view, the language option button is at the top of the page, and other options are at the right sidebar. The sidebar is made sticky by scrolling down depending on the height of the screen.There are created many postcards on the index page that have a hover effect through scaling and shadow. In the main navigation bar, there appears the cover caption of the posts as a carousel.The post page shows heading, sub-heading, cover photo, article, and other details about that post. On the post page, there are options for response and clap that will be shown stickied at the left side of the screen. It will be disappeared by scrolling down when the footer will appear. There is an option called \"Translation of\" on the dashboard page, that will contain the reference id of the previous post which will be translated at that time.",
-  "main": "index.js",
+  "main": "dist/server.bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier \"./src/**/*\" \"./src/**/*\" --write",
+    "watch:pre": "nodemon -w src -e js,html,css,json --delay 2000ms --ignore src/pages/assets --exec 'npm run prettier'",
+    "watch": "nodemon -w dist --exec 'node dist/server.bundle.js'",
+    "build:dev": "webpack -w --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "start": "node dist/server.bundle.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,22 @@
   "bugs": {
     "url": "https://github.com/heaplinker/heaplinker.github.io/issues"
   },
-  "homepage": "https://github.com/heaplinker/heaplinker.github.io#readme"
+  "homepage": "https://github.com/heaplinker/heaplinker.github.io#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.26",
+    "clean-webpack-plugin": "^3.0.0",
+    "colors": "^1.4.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-manifest-plugin": "^3.0.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
 }
