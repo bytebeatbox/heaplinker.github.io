@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: heaplinker.github.io/sitemap.xml
