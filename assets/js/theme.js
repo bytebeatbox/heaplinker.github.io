@@ -1,6 +1,10 @@
-$(document).ready(function() {
-  if (window.location.pathname == '/' || window.location.pathname == '/index') {
-    document.getElementsByTagName('footer')[0].style.bottom = 0
+$(document).ready(function () {
+  if (
+    window.location.pathname == '/' ||
+    window.location.pathname == '/index' ||
+    window.location.pathname == '/bn/'
+  ) {
+    document.getElementsByTagName('footer')[0].style.bottom = 0;
   }
 });
 
