@@ -1,0 +1,3 @@
+# [blog.heaplinker.com](https://blog.heaplinker.com/)
+
+> [Heaplinker Blog](https://blog.heaplinker.com/) is a platform that spreads multilingual digital writings with the motto of **_"think and make"_**. It has been made in a very similar way to [Medium](https://medium.com/). Just as [Medium](https://medium.com/) is an open platform of writings on many subjects, here [Heaplinker Blog](https://blog.heaplinker.com/) is also a platform where contains a variety of topics, especially technical ones for digital publishing. Special emphasis will be given on technical issues here. Its main purpose is to spread ideas, information, and deepen understanding of technical knowledge, and to publish posts in both English and Bengali language.

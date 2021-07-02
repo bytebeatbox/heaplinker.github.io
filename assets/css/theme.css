@@ -1,10 +1,9 @@
-/*!
- * Mundana Jekyll Theme (https://www.wowthemes.net/mundana-jekyll-theme/)
- */
+@import './fonts.css';
 
 body {
   overflow-x: hidden;
   padding-top: 69.75px;
+  position: relative;
 }
 .site-content {
   margin-top: 30px;
@@ -273,6 +272,15 @@ a.text-dark:hover {
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
+}
+.navbar-logo {
+  width: 15%;
+  max-width: 156px;
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+#navbarColor02 {
+  margin-top: 12px;
 }
 .bd-search .form-control {
   font-size: 0.85rem;
@@ -639,13 +647,14 @@ ol.list-featured li {
   counter-increment: my-awesome-counter;
   display: flex;
   font-size: 0.8rem;
+  align-items: center;
 }
 ol.list-featured li:before {
   content: '0' counter(my-awesome-counter);
   font-weight: bold;
   font-size: 2rem;
   margin-right: 0.5rem;
-  font-family: Arial;
+  font-family: heaplinker-heading-en;
   line-height: 1;
   opacity: 0.1;
 }
@@ -653,9 +662,39 @@ ol.list-featured li:before {
   display: none;
 }
 footer {
-  margin-top: 50px;
-  z-index: 1022;
-  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  width: 100%;
+  height: 50px;
+  background: var(--footer-bottom-col);
+  color: var(--footer-top-text-col);
+  justify-content: space-around;
+  align-content: center;
+  color: var(--footer-bottom-text-col);
+  font-size: 0.9rem;
+  font-family: heaplinker-caption-en;
+  position: absolute;
+}
+footer svg {
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
+}
+footer a:hover svg path,
+footer a:focus svg path,
+footer a:active svg path {
+  fill: var(--footer-a-col);
+}
+footer a:nth-child(3) svg path,
+footer a:nth-child(3):focus svg path,
+footer a:nth-child(3):active svg path {
+  fill: var(--twitter-bird-col);
+}
+footer a:nth-child(3):hover svg circle,
+footer a:nth-child(3):focus svg circle,
+footer a:nth-child(3):active svg circle {
+  fill: var(--footer-a-col);
 }
 .sticky-top-offset {
   top: 70px;
@@ -846,4 +885,74 @@ div.a2a_full_footer {
   .topfirstimage {
     height: 280px !important;
   }
+}
+
+.heading-font-en {
+  font-family: heaplinker-heading-en !important;
+}
+
+.caption-font-en {
+  font-family: heaplinker-caption-en !important;
+}
+
+.article-font-en {
+  font-family: heaplinker-article-en !important;
+}
+
+.heading-font-bn {
+  font-family: heaplinker-heading-bn !important;
+}
+
+.caption-font-bn {
+  font-family: heaplinker-caption-bn !important;
+}
+
+.article-font-bn {
+  font-family: heaplinker-article-bn !important;
+}
+
+.heap-btn-col {
+  background-color: var(--heaplinker-btn-col);
+  border-color: transparent;
+}
+
+.heap-btn-col:hover,
+.heap-btn-col:active,
+.heap-btn-col:focus {
+  background-color: var(--heaplinker-btn-col) !important;
+  border-color: transparent !important;
+  opacity: 85% !important;
+  box-shadow: none;
+}
+
+.heap-cap-hov:hover,
+.heap-cap-hov:focus,
+.heap-cap-hov:active {
+  color: var(--heaplinker-cap-col) !important;
+}
+
+a.heap-head-hov:hover,
+a.heap-head-hov:focus,
+a.heap-head-hov:active {
+  color: var(--heaplinker-head-col) !important;
+}
+a.heap-btn-hov-tag-cap {
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Arial' !important;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-weight: bolder;
+}
+a.heap-btn-hov-tag-cap:hover {
+  background-color: transparent;
+  border-color: transparent !important;
+  text-decoration: underline;
+  color: var(--heaplinker-btn-cap-tag-col) !important;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6, article .h1, article .h2, article .h3, article .h4, article .h5, article .h6 {
+  margin-bottom: .5rem;
+}
+
+article p, article pre, article figure, article img, article blockquote, article iframed, article embed {
+  margin-bottom: 1rem;
 }

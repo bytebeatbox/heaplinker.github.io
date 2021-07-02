@@ -43,6 +43,19 @@
   --font-family-sans-serif: 'Segoe UI', 'Helvetica Neue', 'Arial';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
+  --footer-top-col: #09182d;
+  --footer-top-text-cap-col: #9f9f9f;
+  --footer-bottom-col: #071324;
+  --footer-site-name-col: #76c000;
+  --footer-top-text-col: white;
+  --footer-bottom-text-col: #707070;
+  --footer-a-col: #76c000;
+  --twitter-bird-col: #071324;
+  --heaplinker-btn-col: #76c000;
+  --heaplinker-cap-col: #ea2f65;
+  --heaplinker-head-col: #071324;
+  --heaplinker-btn-hov-cap-tag: #09ebaf;
+  --heaplinker-btn-cap-tag-col: #ea2f65;
 }
 
 *,
@@ -58,6 +71,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
 }
 
 @-ms-viewport {
@@ -86,6 +100,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  height: 100%;
 }
 
 [tabindex='-1']:focus {

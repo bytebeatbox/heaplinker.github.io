@@ -1,0 +1,124 @@
+/* english fonts */
+
+/* heaplinker-heading-en fonts */
+@font-face {
+  font-family: 'heaplinker-heading-en';
+  src: url('../fonts/en/Merriweather-Regular.woff2') format('woff2'),
+    url('../fonts/en/Merriweather-Regular.woff') format('woff'),
+    url('../fonts/en/Merriweather-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heaplinker-heading-en';
+  src: url('../fonts/en/Merriweather-Bold.woff2') format('woff2'),
+    url('../fonts/en/Merriweather-Bold.woff') format('woff'),
+    url('../fonts/en/Merriweather-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heaplinker-heading-en';
+  src: url('../fonts/en/Merriweather-BoldItalic.woff2') format('woff2'),
+    url('../fonts/en/Merriweather-BoldItalic.woff') format('woff'),
+    url('../fonts/en/Merriweather-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* heaplinker-caption-en fonts */
+@font-face {
+  font-family: 'heaplinker-caption-en';
+  src: url('../fonts/en/HelveticaNeueRegular.woff2') format('woff2'),
+    url('../fonts/en/HelveticaNeueRegular.woff') format('woff'),
+    url('../fonts/en/HelveticaNeueRegular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'heaplinker-caption-en';
+  src: url('../fonts/en/HelveticaNeueThin.woff2') format('woff2'),
+    url('../fonts/en/HelveticaNeueThin.woff') format('woff'),
+    url('../fonts/en/HelveticaNeueThin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'heaplinker-caption-en';
+  src: url('../fonts/en/HelveticaNeueLight.woff2') format('woff2'),
+    url('../fonts/en/HelveticaNeueLight.woff') format('woff'),
+    url('../fonts/en/HelveticaNeueLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* heaplinker-article-en fonts */
+@font-face {
+  font-family: 'heaplinker-article-en';
+  src: url('../fonts/en/Charter-Italic.woff2') format('woff2'),
+    url('../fonts/en/Charter-Italic.woff') format('woff'),
+    url('../fonts/en/Charter-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'heaplinker-article-en';
+  src: url('../fonts/en/Charter-Bold.woff2') format('woff2'),
+    url('../fonts/en/Charter-Bold.woff') format('woff'),
+    url('../fonts/en/Charter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heaplinker-article-en';
+  src: url('../fonts/en/Charter-BoldItalic.woff2') format('woff2'),
+    url('../fonts/en/Charter-BoldItalic.woff') format('woff'),
+    url('../fonts/en/Charter-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'heaplinker-article-en';
+  src: url('../fonts/en/Charter.woff2') format('woff2'),
+    url('../fonts/en/Charter.woff') format('woff'),
+    url('../fonts/en/Charter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* bangla fonts */
+
+/* heaplinker-heading-bn fonts */
+@font-face {
+  font-family: 'heaplinker-heading-bn';
+  src: url('../fonts/bn/ShorifShishirANSIV2.woff2') format('woff2'),
+    url('../fonts/bn/ShorifShishirANSIV2.woff') format('woff'),
+    url('../fonts/bn/ShorifShishirANSIV2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* heaplinker-caption-bn fonts */
+@font-face {
+  font-family: 'heaplinker-caption-bn';
+  src: url('../fonts/bn/LiShamimChitraneeANSIV2.woff2') format('woff2'),
+    url('../fonts/bn/LiShamimChitraneeANSIV2.woff') format('woff'),
+    url('../fonts/bn/LiShamimChitraneeANSIV2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* heaplinker-article-bn fonts */
+@font-face {
+  font-family: 'heaplinker-article-bn';
+  src: url('../fonts/bn/ShorifMitali.woff2') format('woff2'),
+    url('../fonts/bn/ShorifMitali.woff') format('woff'),
+    url('../fonts/bn/ShorifMitali.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

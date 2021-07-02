@@ -1,10 +1,23 @@
+$(document).ready(function() {
+  if (window.location.pathname == '/' || window.location.pathname == '/index') {
+    document.getElementsByTagName('footer')[0].style.bottom = 0
+  }
+});
+
 // alertbar later
 $(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if (y > 280) {
-    $('.alertbar').fadeIn();
-  } else {
-    $('.alertbar').fadeOut();
+  if ($('.alertbar')) {
+    html = document.documentElement;
+    if (
+      Math.abs(
+        Math.abs(html.scrollTop) > 500 &&
+          Math.abs(html.scrollTop) - Math.abs(html.scrollHeight - 969)
+      ) > 500
+    ) {
+      $('.alertbar').fadeIn();
+    } else {
+      $('.alertbar').fadeOut();
+    }
   }
 });
 
