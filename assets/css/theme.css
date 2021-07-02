@@ -228,7 +228,6 @@ a.text-dark:hover {
     left: 50px;
     border-top: 16px solid #fff;
     border-left: 16px solid #fff;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 }
